@@ -1,0 +1,133 @@
+@import 'variables';
+
+// Clase CSS para estilos de botones
+.button-style {
+  background-color: black;
+  color: white;
+
+  &:hover {
+    background-color: #0000cc;
+    color: white; 
+  }
+
+  &.active {
+    background-color: white;
+  }
+}
+
+.cuerpo {
+  margin: 0;
+  padding-bottom: 3%;
+  background-image: url("../img/piramide.jpg");
+  background-repeat: repeat-y;
+  font-family: Verdana, Geneva, sans-serif;
+  margin-bottom: $footer-height;
+
+  // Extendemos la clase para estilos de botones en .menu
+  .menu {
+    @extend .button-style; 
+  }
+
+  .img-logo {
+    width: 110px;
+    height: 110px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  nav li {
+    display: inline;
+    padding: 10px;
+
+    a {
+      &.active {
+        color: white;
+      }
+
+      &:hover {
+        background-color: black;
+        color: white;
+
+        &.active {
+          background-color: white;
+        }
+      }
+    }
+  }
+  
+  p {
+    text-align: justify;
+    background-color: #f2f2f2; 
+    padding: 10px; 
+    margin: 0; 
+  }
+
+
+  .carousel-img {
+    height: 600px; 
+    max-width: 100%; 
+  }
+
+  .contenedor-contacto {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    max-width: 100%; 
+  }
+  
+  .contacto {
+    background-color: #f2f2f2;
+    padding: 3%;
+    width: 30%;
+    
+  }
+  
+  textarea {
+    width: 100%;
+  }
+  video{
+    width: 50%;
+    height: auto;
+  }
+
+  // Estilo para el botón del menú en modo responsivo 
+  @media (max-width: 767px) {
+    .menu {
+      border: none;
+      color: white;
+      padding: 0;
+
+      &:hover {
+        background-color: transparent; 
+        color: white;
+      }
+    }
+   
+      .botella {
+      max-width:200px; 
+    }  
+    .carousel-img {
+      height: 200px; 
+      max-width: 100%; 
+    }
+    video:not(.responsive-video) {
+      width: 100%;
+      height: auto;
+    }
+    .contenedor-contacto {
+      display: flex;
+      justify-content: center;
+      height: 70vh;
+      max-width: 100%; 
+    }
+    .contacto {
+      background-color: #f2f2f2;
+      padding: 3%;
+      width: 80%;
+      
+    }
+  }
+}

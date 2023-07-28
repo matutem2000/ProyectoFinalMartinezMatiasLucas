@@ -1,0 +1,117 @@
+.button-style, .cuerpo .menu {
+  background-color: black;
+  color: white;
+}
+.button-style:hover, .cuerpo .menu:hover {
+  background-color: #0000cc;
+  color: white;
+}
+.button-style.active, .cuerpo .active.menu {
+  background-color: white;
+}
+
+.cuerpo {
+  margin: 0;
+  padding-bottom: 3%;
+  background-image: url("../img/piramide.jpg");
+  background-repeat: repeat-y;
+  font-family: Verdana, Geneva, sans-serif;
+  margin-bottom: 50px;
+}
+.cuerpo .img-logo {
+  width: 110px;
+  height: 110px;
+}
+.cuerpo nav ul {
+  list-style: none;
+  padding: 0;
+}
+.cuerpo nav li {
+  display: inline;
+  padding: 10px;
+}
+.cuerpo nav li a.active {
+  color: white;
+}
+.cuerpo nav li a:hover {
+  background-color: black;
+  color: white;
+}
+.cuerpo nav li a:hover.active {
+  background-color: white;
+}
+.cuerpo p {
+  text-align: justify;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin: 0;
+}
+.cuerpo .carousel-img {
+  height: 600px;
+  max-width: 100%;
+}
+.cuerpo .contenedor-contacto {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  max-width: 100%;
+}
+.cuerpo .contacto {
+  background-color: #f2f2f2;
+  padding: 3%;
+  width: 30%;
+}
+.cuerpo textarea {
+  width: 100%;
+}
+.cuerpo video {
+  width: 50%;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .cuerpo .menu {
+    border: none;
+    color: white;
+    padding: 0;
+  }
+  .cuerpo .menu:hover {
+    background-color: transparent;
+    color: white;
+  }
+  .cuerpo .botella {
+    max-width: 200px;
+  }
+  .cuerpo .carousel-img {
+    height: 200px;
+    max-width: 100%;
+  }
+  .cuerpo video:not(.responsive-video) {
+    width: 100%;
+    height: auto;
+  }
+  .cuerpo .contenedor-contacto {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    max-width: 100%;
+  }
+  .cuerpo .contacto {
+    background-color: #f2f2f2;
+    padding: 3%;
+    width: 80%;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 50px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Indica las promociones del portal Bodegas y viñedos">
+    <meta name="keywords" content="promociones vinos, vinos baratos, vinos en promo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon16.png">
+    <title>Bodeas y viñedos-Promo web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body class="cuerpo">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <span class="navbar-brand">Bodeas y viñedos</span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./nuestrosProductos.html">Nuestros productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./promocionesWeb.html">Promociones web</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./quienesSomos.html">Quienes somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+              <img class="animate__animated animate__hinge img-logo" src="../img/mascota.png" alt="imagen de la mascota del negocio. Una figura redonda sosteniendo el vaso">
+            </div>
+        </nav>
+    </header>
+    <main>
+      <section>
+        <div class="container text-center bg-secondary">
+            <h1 class="mt-3 animate__animated animate__flip">Promociones</h1>
+              <h4>Este mes un descuento del 70% sobre precio total en la compra de estos tres productos</h4>
+              <div class="row text-center">
+                  <div class="col col-lg-4 col-sm-12">
+                    <button type="button" class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#Rosado">
+                      <img class="botella" src="../img/bottle-rose.png" alt="imagen de vino rosado" title="Alamos Malbec Rosé">
+                    </button>
+                    <!-- Modal vino rosado -->
+                    <div class="modal fade" id="Rosado" tabindex="-1" aria-labelledby="rosadoModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="rosadoModalLabel">Alamos Malbec Rosé</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <img class="botella" src="../img/bottle-rose.png" alt="imagen de vino rosado" title="Alamos Malbec Rosé">
+                            <p>2-3 días de maceración prefermentativa en frío. 15-20 días de fermentación. Temperatura media de fermentación: 15º- 18º C. 5 meses en roble francés.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                     <!-- Fin Modal vino rosado -->
+                  </div>
+                  <div class="col col-lg-4 col-sm-12">
+                    <button type="button" class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#cabernet">
+                      <img class="botella" src="../img/bottle-cabernet.png" alt="imagen de vino cabernet sauvignon">
+                    </button>
+                    <!-- Modal cabernet sauvignon-->
+                    <div class="modal fade" id="cabernet" tabindex="-1" aria-labelledby="cabernetModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="cabernetModalLabel">Alamos Cabernet Sauvignon</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <img class="botella" src="../img/bottle-cabernet.png" alt="imagen de vino cabernet sauvignon">
+                            <p>2-3 días de maceración prefermentativa en frío. 8-12 días de fermentación. Temperatura media de fermentación: 28º 30º C. Fermentación 100% maloláctica. 6-9 meses en roble francés. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Fin Modal cabernet sauvignon-->
+                  </div>
+                  <div class="col col-lg-4 col-sm-12">
+                    <button type="button" class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#chardonay">
+                      <img class="botella" src="../img/bottle-chardonnay.png" alt="imagen de vino chardonay">
+                    </button>
+                    <!-- Modal chardonay -->
+                    <div class="modal fade" id="chardonay" tabindex="-1" aria-labelledby="chardonayModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="chardonayModalLabel">Alamos Chardonay</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <img class="botella" src="../img/bottle-chardonnay.png" alt="imagen de vino chardonay">
+                            <p>De color amarillo dorado con matices verdes. Alamos Chardonnay ofrece intensos aromas de frutas tropicales, cítricos y atractivas notas florales. Sabores concentrados de peras e higos con suaves notas de vainilla y especias dulces.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+    </main>
+<footer>
+    <h4>Luján de Cuyo (5509), Mendoza, Argentina</h4>  
+</footer>
+</body>
+</html>
